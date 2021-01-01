@@ -1,9 +1,4 @@
-/*
-  Theme Name: Reveal
-  Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -126,13 +121,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 {
-  font-size: 42px;
+  font-size: 38px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
+
 
 #header #logo h1 a {
   color: #D2D2D2;
@@ -155,7 +151,20 @@ h1, h2, h3, h4, h5, h6 {
     height: 74px;
   }
   #header #logo h1 {
-    font-size: 34px;
+    font-size: 30px;
+  }
+  #header #logo img {
+    max-height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  #header {
+    padding: 26px 0;
+    height: 74px;
+  }
+  #header #logo h1 {
+    font-size: 25px;
   }
   #header #logo img {
     max-height: 40px;
@@ -590,6 +599,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 10px;
 }
 
+#testimonials i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #F8B1B1;
+}
+
+#testimonials ul {
+  list-style: none;
+  padding: 0;
+}
+
+#testimonials ul, #testimonials li {
+  margin: 0; padding: 0;
+}
+
+
+
 /* Services Section
 --------------------------------*/
 #services {
@@ -615,7 +641,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   float: left;
 }
 
-#services .box .icon i {
+#testimonials .icon i {
   color: #444;
   font-size: 64px;
   transition: 0.5s;
@@ -623,7 +649,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-top: 34px;
 }
 
-#services .box .icon i:before {
+#testimonials .icon {
   background: #F8B1B1;
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -637,7 +663,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 22px;
 }
 
-#services .box h4 a {
+#testimonials h3 {
   color: #444;
 }
 
@@ -773,6 +799,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
 }
 
+#testimonials .testimonial-item li{
+  text-align: left;
+}
+
+
 @media (max-width: 767px) {
   #testimonials .testimonial-item {
     margin: 30px 10px;
@@ -790,7 +821,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #555;
 }
 
 #testimonials .testimonial-item h4 {
